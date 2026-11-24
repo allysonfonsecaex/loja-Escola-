@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça a Nébula Miúda: objetos inventados para missões que a realidade ainda não inventou.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nébula Miúda — uma loja fora da realidade">
+  <meta property="og:description" content="Objetos impossíveis, ideias extraordinárias e uma jornada de compra simples.">
+  <title>Nébula Miúda | Objetos impossíveis</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/catalog.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">✳</span> Nébula Miúda</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Vitrine</a></li>
+            <li class="nav-item"><a class="nav-link" href="#manifesto">Nossa ideia</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Achados de outros mundos · edição 01</p>
+        <h1>O impossível também<br>pode chegar à sua porta.</h1>
+        <p class="hero-copy">Uma pequena coleção de invenções improváveis para gente curiosa, formigas astronautas e jardins sem fronteiras.</p>
+        <a class="btn btn-primary btn-lg" href="#vitrine">Explorar a coleção <span aria-hidden="true">↓</span></a>
+        <span class="hero-orbit orbit-one" aria-hidden="true">✦</span>
+        <span class="hero-orbit orbit-two" aria-hidden="true">✳</span>
+      </div>
+    </section>
+
+    <section id="vitrine" class="container py-5" aria-labelledby="titulo-vitrine">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Catálogo de curiosidades</p>
+          <h2 id="titulo-vitrine">Peças de outro possível</h2>
+          <p class="text-secondary mb-0">Cada invenção segue uma regra — e inventa as próprias exceções.</p>
+        </div>
+        <span class="collection-stamp" aria-label="Quatro itens na coleção">COLEÇÃO<br><strong>04</strong></span>
+      </div>
+
+      <div class="row g-3 filters" aria-label="Filtros da vitrine">
+        <div class="col-md-5">
+          <label for="filtroProduto" class="form-label">Buscar na coleção</label>
+          <input id="filtroProduto" class="form-control" type="search" placeholder="Nome, categoria ou ideia..." autocomplete="off">
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <label for="filtroCategoria" class="form-label">Categoria</label>
+          <select id="filtroCategoria" class="form-select">
+            <option value="">Todas</option>
+          </select>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <label for="ordenacao" class="form-label">Organizar por</label>
+          <select id="ordenacao" class="form-select">
+            <option value="featured">Nossa seleção</option>
+            <option value="name">Nome (A–Z)</option>
+            <option value="price-asc">Menor preço</option>
+            <option value="price-desc">Maior preço</option>
+          </select>
+        </div>
+      </div>
+      <p id="mensagemFiltro" class="filter-status" role="status" aria-live="polite"></p>
+      <div class="row g-4" id="listaProdutos"></div>
+    </section>
+
+    <section id="manifesto" class="manifesto">
+      <div class="container manifesto-inner">
+        <p class="eyebrow">Nosso pequeno manifesto</p>
+        <h2>Se ainda não existe,<br>há espaço para imaginar.</h2>
+        <p>Na Nébula Miúda, toda invenção começa com uma pergunta estranha. O resto é curiosidade, cuidado e um pouquinho de poeira estelar.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container footer-inner">
+      <a class="navbar-brand" href="index.html"><span class="brand-mark" aria-hidden="true">✳</span> Nébula Miúda</a>
+      <p class="mb-0">Feito de imaginação. Compra apenas simulada, sem cobrança real.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
